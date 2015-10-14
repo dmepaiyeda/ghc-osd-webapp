@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name liningwangApp.controller:MainCtrl
+ * @name womensp2pToolkitWebappApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the liningwangApp
+ * Controller of the womensp2pToolkitWebappApp
  */
-angular.module('liningwangApp')
+angular.module('womensp2pToolkitWebappApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

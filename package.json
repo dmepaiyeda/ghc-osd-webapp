@@ -1,5 +1,5 @@
 {
-  "name": "womensp2ptoolkitwebapp",
+  "name": "ghcosdwebapp",
   "private": true,
   "devDependencies": {
     "grunt": "^0.4.5",

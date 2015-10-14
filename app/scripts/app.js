@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name liningwangApp
+ * @name womensp2pToolkitWebappApp
  * @description
- * # liningwangApp
+ * # womensp2pToolkitWebappApp
  *
  * Main module of the application.
  */
 angular
-  .module('liningwangApp', [
+  .module('womensp2pToolkitWebappApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
