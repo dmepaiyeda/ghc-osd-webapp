@@ -31,14 +31,12 @@ body {
 /* Custom page header */
 .header {
   /*border-bottom: 1px solid #e5e5e5;*/
-  margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
-    padding-bottom: 19px;
   }
 }
 
@@ -78,8 +76,8 @@ body {
 }
 
 .search {
-  margin-left: 300px;
-  margin-right: 200px;
+  margin-left: 270px;
+  margin-right: 250px;
   margin-bottom: 50px;
   color: #6B6B6B;
   border-bottom: 1px solid #e5e5e5;
@@ -96,8 +94,13 @@ body {
   margin: 10px;
   color: #6B6B6B;
   margin-right: 30px;
+  letter-spacing: 4px;
 }
 
+
+a:hover {
+  text-decoration: none;
+}
 
 
 .vertnav {
