@@ -14,33 +14,36 @@ angular.module('womensp2pToolkitWebappApp')
       'AngularJS',
       'Karma'
     ];
-  var tabClasses;
-  
-  function initTabs() {
-    tabClasses = ["","","",""];
-  }
-  
-  $scope.getTabClass = function (tabNum) {
-    return tabClasses[tabNum];
+    // Dropdown Menu
+var dropdown = document.querySelectorAll('.dropdown');
+var dropdownArray = Array.prototype.slice.call(dropdown,0);
+dropdownArray.forEach(function(el){
+  var button = el.querySelector('a[data-toggle="dropdown"]'),
+      menu = el.querySelector('.dropdown-menu'),
+      arrow = button.querySelector('i.icon-arrow');
+
+  button.onclick = function(event) {
+    if(!menu.hasClass('show')) {
+      menu.classList.add('show');
+      menu.classList.remove('hide');
+      arrow.classList.add('open');
+      arrow.classList.remove('close');
+      event.preventDefault();
+    }
+    else {
+      menu.classList.remove('show');
+      menu.classList.add('hide');
+      arrow.classList.remove('open');
+      arrow.classList.add('close');
+      event.preventDefault();
+    }
   };
-  
-  $scope.getTabPaneClass = function (tabNum) {
-    return "tab-pane " + tabClasses[tabNum];
-  };
-  
-  $scope.setActiveTab = function (tabNum) {
-    initTabs();
-    tabClasses[tabNum] = "active";
-  };
-  
-  $scope.tab1 = "This is first section";
-  $scope.tab2 = "This is SECOND section";
-  $scope.tab3 = "This is THIRD section";
-  $scope.tab4 = "This is FOUTRH section";
-  
-  //Initialize 
-  initTabs();
-  $scope.setActiveTab(1);
+})
+
+Element.prototype.hasClass = function(className) {
+    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+};
+
 
 
   });

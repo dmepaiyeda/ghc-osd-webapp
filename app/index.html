@@ -21,26 +21,35 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+   
+    </div>
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/homepage">Candidate Forum</a>
-          </div>
-
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/homepage">Home</a></li>
+            
+            <li class="dropdown">
+            <a href="#" data-toggle="dropdown">
+              <div class="vertnav"><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" width="20px" height="20px"> </img></div>
+              </a>
+            
+            
+             <ul class="dropdown-menu" ng-controller="VertnavCtrl">
+            <li><a ng-href="#/profile">Profile</a></li>
+            <li><a ng-href="#/fundraising">Fundraising</a></li>
+            <li><a ng-href="#/contact">Contact</a></li>
+             <li><a ng-href="#/about">About</a></li>
+             </ul>
+             </li>
+
+             <li><div class="title"><a ng-href="#/homepage">  CANDIDATE FORUM</a></div></li>
+              <li class="active"><a ng-href="#/homepage">Home</a></li>
               <li><a ng-href="#/candidates">Candidates</a></li>
+             
               <li><a ng-href="#/reports">Reports</a></li>
               <li><a ng-href="#/testimonials">Testimonials</a></li>
             </ul>
@@ -49,8 +58,10 @@
       </div>
     </div>
 
-    <div class="search"> 
-    
+    <div class="search"> search for candidates, constituents... 
+    <div class="right">
+    <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png" width="20px" height="20px"> </img> 
+    </div>
     </div>
 
 <!--      <div class="tabbable tabs-left">
@@ -87,7 +98,9 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <img src="/images/facebook.png" width="20px" height="20px"></img>  
+      <img src="/images/twitter.png" width="20px" height="20px"></img>  
+      <img src="/images/wordpress.png" width="20px" height="20px"></img>  
       </div>
     </div>
 
