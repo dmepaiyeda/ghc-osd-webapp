@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name ghcOsdWebappApp.controller:AboutCtrl
+ * @name ghcOsdWebappApp.controller:ReportsCtrl
  * @description
- * # AboutCtrl
+ * # ReportsCtrl
  * Controller of the ghcOsdWebappApp
  */
 angular.module('womensp2pToolkitWebappApp')
-  .controller('AboutCtrl', function () {
+  .controller('ReportsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

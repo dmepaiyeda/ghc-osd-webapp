@@ -13,8 +13,9 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
   </head>
-  <body ng-app="ghcOsdWebappApp">
+  <body ng-app="womensp2pToolkitWebappApp" >
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,20 +33,53 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">ghcOsdWebapp</a>
+            <a class="navbar-brand" href="#/homepage">Candidate Forum</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li class="active"><a href="#/homepage">Home</a></li>
+              <li><a ng-href="#/candidates">Candidates</a></li>
+              <li><a ng-href="#/reports">Reports</a></li>
+              <li><a ng-href="#/testimonials">Testimonials</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="search"> 
+    
+    </div>
+
+<!--      <div class="tabbable tabs-left">
+      <ul class="nav nav-tabs">
+         <li ng-class="getTabClass(1)" ng-click="setActiveTab(1)"><a ng-href="#/profile" data-toggle="tab">Profile</a></li>
+         <li ng-class="getTabClass(2)" ng-click="setActiveTab(2)"><a ng-href="#/fundraising" data-toggle="tab">Fundraising</a></li>
+         <li ng-class="getTabClass(3)" ng-click="setActiveTab(3)"><a ng-href="#/about" data-toggle="tab">About</a></li>
+         <li ng-class="getTabClass(4)" ng-click="setActiveTab(4)"><a href="#/contact" data-toggle="tab">Contact</a></li>
+      </ul>
+      <div class="tab-content">
+        <div ng-class="getTabPaneClass(1)" id="profile">    
+            {{tab1}}
+         </div>       
+        
+        <div ng-class="getTabPaneClass(2)" id="fundraising">     
+          {{tab2}}
+        </div>
+        
+        <div ng-class="getTabPaneClass(3)" id="about">     
+          {{tab3}}
+        </div>
+        
+        <div ng-class="getTabPaneClass(4)" id="contact">     
+          {{tab4}}
+        </div>      
+      
+      </div>
+    </div>
+ -->
 
     <div class="container">
     <div ng-view=""></div>
@@ -87,6 +121,13 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/testimonials.js"></script>
+        <script src="scripts/controllers/candidates.js"></script>
+        <script src="scripts/controllers/reports.js"></script>
+        <script src="scripts/controllers/profile.js"></script>
+        <script src="scripts/controllers/fundraising.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/vertnav.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "name": "ghc-osd-webapp",
+  "name": "womensp2pToolkitWebappApp",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.3.0",
@@ -15,7 +15,7 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "ghcOsdWebappApp",
+  "moduleName": "womensp2pToolkitWebappApp",
   "overrides": {
     "bootstrap": {
       "main": [
